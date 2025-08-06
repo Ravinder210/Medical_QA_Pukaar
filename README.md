@@ -30,7 +30,8 @@ A powerful Question Answering chatbot for medical PDFs (e.g. **IMCI Chart Bookle
 ![Architecture Diagram](Follow-up.png)
 
 ## 🗺️ Project Structure
-.
+
+```text
 ├── docs/
 │   └─ Pdfs                  # All the pdfs that are to be parsed
 ├── data/
@@ -48,7 +49,7 @@ A powerful Question Answering chatbot for medical PDFs (e.g. **IMCI Chart Bookle
 ├── parsed_pdf/
 │   ├── json_files        # json files of parsed pdf with metadata and also python cleaner function
 │   
-
+```
 
 ## 🚀 Getting Started 
 
