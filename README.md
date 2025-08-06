@@ -14,7 +14,7 @@ A powerful Question Answering chatbot for medical PDFs (e.g. **IMCI Chart Bookle
 ## 🔧 Features
 
 - ✅ Chunk-by-item parsing with full metadata (page, section, file)
-- ✅ Table-aware embedding using markdown standardization
+- ✅ Table-aware embedding using markdown standardisation
 - ✅ Follow-up detection using Gemini (YES/NO based)
 - ✅ Dynamic query rewriting for context-aware answers
 - ✅ Gemini Flash-powered answers with exact citations
@@ -26,23 +26,5 @@ A powerful Question Answering chatbot for medical PDFs (e.g. **IMCI Chart Bookle
 
 ## 🗺️ Architecture Overview
 
-```text
-User Query
-   │
-   ▼
-/ask (FastAPI)
-   │
-   ▼
-Conversational Pipeline
-   ├── Check for follow-up (Gemini)
-   ├── Rewrite query if needed
-   ├── Retrieve top-K chunks (PubMedBERT + FAISS)
-   ├── Generate answer (Gemini Flash)
-   └── Return final answer with citation
+RAG_Pipeline.png
 
-Data Pipeline
-   ├── Parse PDFs with OCR + StructureV3
-   ├── Chunk JSON into [value + md] pairs
-   ├── Store chunks with metadata
-   ├── Create 768-dim embeddings via PubMedBERT
-   └── Index all vectors in FAISS
