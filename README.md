@@ -55,7 +55,7 @@ A powerful Question Answering chatbot for medical PDFs (e.g. **IMCI Chart Bookle
 ### 1. Clone the Repo
 
 ```python
-git clone https://github.com/your-username/medical-rag-chatbot.git
+git clone https://github.com/Ravinder210/Medical_QA_Pukaar.git
 cd medical-rag-chatbot
 ```
 ### 2. Install Dependencies
