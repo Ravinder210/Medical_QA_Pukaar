@@ -26,5 +26,6 @@ A powerful Question Answering chatbot for medical PDFs (e.g. **IMCI Chart Bookle
 
 ## 🗺️ Architecture Overview
 
-RAG_Pipeline.png
+![Architecture Diagram](RAG_Pipeline.png)
+![Architecture Diagram](Follow-up.png)
 
