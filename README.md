@@ -29,3 +29,40 @@ A powerful Question Answering chatbot for medical PDFs (e.g. **IMCI Chart Bookle
 ![Architecture Diagram](RAG_Pipeline.png)
 ![Architecture Diagram](Follow-up.png)
 
+## 🗺️ Project Structure
+.
+├── docs/
+│   └─ Pdfs                  # All the pdfs that are to be parsed
+├── data/
+│   ├── faiss_index.index        # FAISS vector index
+│   ├── embeddings.npy           # NumPy matrix of vectors
+│   └── metadata.jsonl           # Corresponding metadata
+├── rag_api_fastapi.py                # FastAPI server (entrypoint)
+├── rag_incremental_indexer.py        # Create Index for new chunks and generate response
+├── generator.py                 # Gemini-based answer generation
+├── memory.py                    # Session-aware memory manager
+├── preprocess.py                # Document parsing utilities
+│                            
+├── requirements.txt
+└── README.md
+├── parsed_pdf/
+│   ├── json_files        # json files of parsed pdf with metadata and also python cleaner function
+│   
+
+
+## 🚀 Getting Started 
+
+### 1. Clone the Repo
+
+```python
+git clone https://github.com/your-username/medical-rag-chatbot.git
+cd medical-rag-chatbot
+```
+### 2. Install Dependencies
+
+```python
+pip install -r requirements.txt
+```
+
+
+
